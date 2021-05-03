@@ -1,0 +1,18 @@
+
+## Added by HEMTT
+releases/*
+*.biprivatekey
+*.pbo
+keys/*
+.hemtt/local
+####
+releases
+keys
+## Added by HEMTT
+####
+
+## Added by HEMTT
+####
+.hemtt/template/
+luma_inverter/conversion.png
+luma_inverter/map_preview_new.png

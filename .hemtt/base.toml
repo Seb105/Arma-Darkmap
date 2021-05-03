@@ -1,0 +1,11 @@
+name = "darkmap"
+prefix = "darkmap"
+author = "Seb"
+template = "cba"
+mainprefix = "z"
+include = ["./include"]
+files = [
+
+] 
+folder_optionals = true
+sig_version = 3

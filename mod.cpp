@@ -1,0 +1,10 @@
+name = "Darkmap";
+dir = "@darkmap";
+author = "Seb";
+actionName = "Website";
+action = "http://www.carpenoctem.co";
+description = "Github: https://github.com/Seb105/Arma-Darkmap";
+tooltip = "Seb's Darkmap";
+tooltipOwned = "Seb's Darkmap Owned";
+overview = "";
+overviewText = "Seb's Darkmap Overview";
