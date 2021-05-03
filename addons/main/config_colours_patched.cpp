@@ -872,7 +872,6 @@ class ctrlMapEmpty
     };
 };
 
-
 /*
     INCLUDE INHERITED ENTRIES: true
     SHOW CLASSES ONLY: false
