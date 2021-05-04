@@ -44,12 +44,12 @@ def main():
             newlines.append(line)
             continue
         if startTxt.find("color") == -1 or line.find("{") == -1:
-            newlines.append(line)
+            #newlines.append(line)
             continue
         colour = line[line.find("{") : line.find("}")+1].replace("{","[").replace("}","]")
         colour = ast.literal_eval(colour)
         if type(colour[0]) is str:
-            newlines.append(line)
+            #newlines.append(line)
             continue
 
         colourOld = copy.deepcopy(colour)
@@ -73,6 +73,27 @@ def main():
         line = line[: line.find("{")]
         line = "{0}{1};\n".format(line, colour)
         newlines.append(line)
+
+    # Recursively remove empty config entries
+    i = 0
+    while True:
+        j = 0
+        deleteLines = []
+        for line in newlines[:-1]:
+            startTxt = line.replace(" ","")[0]
+            startTxtNext =  newlines[j+1].replace(" ","")[0]
+            if startTxt[0] == "{" and startTxtNext[0] == "}":
+                deleteLines.append(j-1)
+                deleteLines.append(j)
+                deleteLines.append(j+1)
+            j += 1
+        for index in deleteLines:
+            newlines[index] = ""
+        newlines = [line for line in newlines if line != ""]
+        if len(deleteLines) == 0: 
+            break
+        i += 1
+    print("Removed empty classes in {0} iterations".format(i))
 
     print("Writing new config")
     with open(NEW_PATH, 'w') as f:
@@ -102,4 +123,4 @@ def preview_image():
 
 if __name__ == '__main__':
     main()
-    preview_image()
+    #preview_image()
