@@ -8,6 +8,8 @@ class RscButtonMenuCancel;
 class RscMessageBox;
 class ctrlDefault;
 class RscText;
+
+
 /*
     INCLUDE INHERITED ENTRIES: false
     SHOW CLASSES ONLY: false
@@ -1235,7 +1237,6 @@ class RscMapControlEmpty: RscMapControl
 };
 
 
-
 /*
     INCLUDE INHERITED ENTRIES: false
     SHOW CLASSES ONLY: false
@@ -1923,12 +1924,14 @@ class CfgMarkerColors
     };
 };
 
+
 /*
     INCLUDE INHERITED ENTRIES: false
     SHOW CLASSES ONLY: false
     CONFIG PATH: bin\config.bin/CfgLocationTypes
     SOURCE ADD-ON(S): A3_Ui_F, A3_Ui_F_Orange, A3_Ui_F_Enoch
 */
+
 
 class CfgLocationTypes
 {
