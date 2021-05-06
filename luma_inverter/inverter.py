@@ -132,7 +132,6 @@ def main():
         if lineWords[1][-1] != ":": continue # Is class inheriting?
         inheritance = lineWords[2].replace(";", "")
         declarations = [line for line in newlines if line.find("class " + inheritance) != -1]
-        # if len(declarations) > 0: print(inheritance, declarations) 
         if len(declarations) == 0:
             warning = "WARNING: class {0} is inherited but never declared".format(inheritance)
             if warning not in warnings: warnings.append(warning)
