@@ -3,7 +3,7 @@
 Arma Map Darkmode inverts the luminance for almost all elements of the map. Because dark mode is superior.
 
 ## Compatibility:
-### **Use the ACE version if you are using ACE!**
+- **Use the ACE version if you are using ACE!**
 - Generally incompatible with other mods which modify the colour values of the map or markers. Test it and see yourself, but no promises.
 ## Features and notes
 - 100% client side - server does not require mod/not every user needs this mod
