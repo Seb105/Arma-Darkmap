@@ -73,10 +73,7 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.447,0.595,0.353,0.4};
     };
-    class FuelStation: Waypoint
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class FuelStation: Waypoint {};
     class Hospital: FuelStation {};
     class Church: FuelStation {};
     class Lighthouse: FuelStation {};
@@ -755,7 +752,10 @@ class RscDisplayStrategicMap
 };
 class CfgMarkerColors
 {
-    class Default;
+    class Default
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
     class ColorBlack: Default
     {
         color[] = {0.85,0.85,0.85,1};

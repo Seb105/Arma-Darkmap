@@ -196,7 +196,7 @@ class ctrlMap: ctrlDefault
     {
         coefMax = 1;
         coefMin = 0.85;
-        color[] = {1,1,1,1};
+        // color[] = {1,1,1,1}; // REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
     };
     class Hospital: FuelStation
@@ -1775,9 +1775,9 @@ class CfgMarkerColors
 {
     class Default
     {
-        // name = "Default";
-        // color[] = {0,0,0,1};
-        // scope = 1;
+        name = "Default";
+        color[] = {0,0,0,1};
+        scope = 1;
     };
     class ColorBlack: Default
     {

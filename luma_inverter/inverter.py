@@ -5,9 +5,11 @@ import colorsys
 from time import time
 from concurrent.futures import ProcessPoolExecutor
 import re
+import subprocess
+import shutil
 
 OLD_PATH = "config_colours_old.cpp"
-NEW_PATH = "config_colours_patched.cpp"
+NEW_PATH = "..\\addons\\main\\config_colours_patched.cpp"
 IMAGE_PATH = "conversion.png"
 
 def linear_conversion(oldMin,oldMax,oldVal,newMin,newMax):
@@ -146,6 +148,13 @@ def main():
             f.write(line)
     print("Wrote config in {0}s".format(round(time() - timeTaken,2)))
     timeTaken = time()
+
+    print("Building PBO")
+    shutil.rmtree("..\\releases")
+    subprocess.call("..\\build release.bat")
+    print("Built in {0}s".format(round(time() - timeTaken,2)))
+    timeTaken = time()
+
     print("Saving preview image")
     comparisonImg.save(IMAGE_PATH)
     print("Preview image made in in {0}s".format(round(time() - timeTaken,2)))
