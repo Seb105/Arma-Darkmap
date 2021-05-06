@@ -1775,9 +1775,9 @@ class CfgMarkerColors
 {
     class Default
     {
-        name = "Default";
-        color[] = {0,0,0,1};
-        scope = 1;
+        // name = "Default";
+        // color[] = {0,0,0,1};
+        // scope = 1;
     };
     class ColorBlack: Default
     {

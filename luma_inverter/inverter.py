@@ -87,7 +87,10 @@ def main():
             if startTxt[0] == "{" and startTxtNext[0] == "}":
                 classLine = newlines[index-1]
                 strIndex = classLine.find("\n")
-                classLine = classLine[:strIndex] + ";" + classLine[strIndex:]
+                if len(classLine.strip().split(" ")) == 3:
+                    classLine = classLine[:strIndex] + " {};" + classLine[strIndex:]
+                else:
+                    classLine = classLine[:strIndex] + ";" + classLine[strIndex:]
                 newlines[index-1] = classLine
                 deleteLines.append(index)
                 deleteLines.append(index+1)

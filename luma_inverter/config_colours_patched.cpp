@@ -53,8 +53,8 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class WaypointCompleted: Waypoint;
-    class CustomMark: Waypoint;
+    class WaypointCompleted: Waypoint {};
+    class CustomMark: Waypoint {};
     class Command: Waypoint
     {
         color[] = {0.075,0.075,0.075,1};
@@ -63,8 +63,8 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.447,0.595,0.353,0.4};
     };
-    class SmallTree: Bush;
-    class Tree: SmallTree;
+    class SmallTree: Bush {};
+    class Tree: SmallTree {};
     class Rock: SmallTree
     {
         color[] = {0.772,0.772,0.772,0.8};
@@ -77,32 +77,32 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.075,0.075,0.075,1};
     };
-    class Hospital: FuelStation;
-    class Church: FuelStation;
-    class Lighthouse: FuelStation;
-    class Power: FuelStation;
-    class PowerSolar: FuelStation;
-    class PowerWave: FuelStation;
-    class PowerWind: FuelStation;
-    class Quay: FuelStation;
-    class Transmitter: FuelStation;
-    class Watertower: FuelStation;
+    class Hospital: FuelStation {};
+    class Church: FuelStation {};
+    class Lighthouse: FuelStation {};
+    class Power: FuelStation {};
+    class PowerSolar: FuelStation {};
+    class PowerWave: FuelStation {};
+    class PowerWind: FuelStation {};
+    class Quay: FuelStation {};
+    class Transmitter: FuelStation {};
+    class Watertower: FuelStation {};
     class Cross: Waypoint
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Chapel: Cross;
-    class Shipwreck: Cross;
+    class Chapel: Cross {};
+    class Shipwreck: Cross {};
     class Bunker: Waypoint
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Fortress: Bunker;
-    class Fountain: Bunker;
-    class Ruin: Waypoint;
-    class Stack: Waypoint;
-    class Tourism: Waypoint;
-    class ViewTower: Waypoint;
+    class Fortress: Bunker {};
+    class Fountain: Bunker {};
+    class Ruin: Waypoint {};
+    class Stack: Waypoint {};
+    class Tourism: Waypoint {};
+    class ViewTower: Waypoint {};
 };
 class ctrlMapEmpty: ctrlMap
 {
@@ -584,7 +584,7 @@ class RscDisplayStrategicMap
             colorRocks[] = {0.85,0.85,0.85,0};
             colorGrid[] = {0.85,0.85,0.85,0};
             colorGridMap[] = {0.85,0.85,0.85,0};
-            class Task: Task;
+            class Task: Task {};
         };
     };
     class controls
@@ -755,10 +755,7 @@ class RscDisplayStrategicMap
 };
 class CfgMarkerColors
 {
-    class Default
-    {
-        color[] = {0.85,0.85,0.85,1};
-    };
+    class Default;
     class ColorBlack: Default
     {
         color[] = {0.85,0.85,0.85,1};
@@ -890,8 +887,8 @@ class CfgLocationTypes
     {
         color[] = {0.85,0.85,0.85,0.5};
     };
-    class Flag: Hill;
-    class b_unknown: Flag;
+    class Flag: Hill {};
+    class b_unknown: Flag {};
     class group_0: b_unknown
     {
         color[] = {0.85,0.85,0.85,1};
