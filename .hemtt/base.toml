@@ -1,5 +1,5 @@
-name = "darkmap"
-prefix = "darkmap"
+name = "darkmap_ace"
+prefix = "darkmap_ace"
 author = "Seb"
 template = "cba"
 mainprefix = "z"
@@ -7,5 +7,6 @@ include = ["./include"]
 files = [
 
 ] 
+optionals = []
 folder_optionals = true
 sig_version = 3

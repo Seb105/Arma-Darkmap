@@ -7,10 +7,13 @@ from concurrent.futures import ProcessPoolExecutor
 import re
 import subprocess
 import shutil
+import os
 
-OLD_PATH = "config_colours_old.cpp"
-NEW_PATH = "..\\addons\\main\\config_colours_patched.cpp"
+OLD_COLOUR_PATH = "config_colours_old.cpp"
+NEW_COLOUR_PATH_NOACE = "..\\addons\\main\\config_colours_patched.cpp"
+NEW_COLOUR_PATH_ACE = "..\\addons\\ace\\config_colours_patched.cpp"
 IMAGE_PATH = "conversion.png"
+TOML_PATH = "..\\.hemtt\\base.toml"
 
 def linear_conversion(oldMin,oldMax,oldVal,newMin,newMax):
     oldRange = (oldMax - oldMin)  
@@ -33,7 +36,7 @@ def main():
     comparisonImg = Image.new(mode='RGB', size=(2560,2560), color=(255, 255, 255))
     draw = ImageDraw.Draw(comparisonImg)
     print("Reading old config")
-    with open(OLD_PATH, "r") as f:
+    with open(OLD_COLOUR_PATH, "r") as f:
         lines = f.readlines()
     print("Read old config in {0}s".format(round(time() - timeTaken,2)))
     timeTaken = time()
@@ -143,17 +146,12 @@ def main():
     print("Checked for warnings in {0}s".format(round(time() - timeTaken,2)))
     timeTaken = time()
 
-    print("Writing new config")
-    with open(NEW_PATH, 'w') as f:
-        for line in newlines:
-            f.write(line)
+    print("Writing new configs")
+    with open(NEW_COLOUR_PATH_NOACE, 'w') as f:
+        f.writelines(newlines)
+    with open(NEW_COLOUR_PATH_ACE, 'w') as f:
+        f.writelines(newlines)
     print("Wrote config in {0}s".format(round(time() - timeTaken,2)))
-    timeTaken = time()
-
-    print("Building PBO")
-    shutil.rmtree("..\\releases")
-    subprocess.call("..\\build release.bat")
-    print("Built in {0}s".format(round(time() - timeTaken,2)))
     timeTaken = time()
 
     print("Saving preview image")
@@ -177,6 +175,25 @@ def preview_image():
     img.save("map_preview_new.png")
     print("Done writing new image")
 
+def build_both_pbos():
+    timeTaken = time()
+    with open(TOML_PATH, 'r') as f:
+        toml = f.readlines()
+    for index, line in enumerate(toml):
+        toml[index] = line.replace("darkmap_ace","darkmap")
+    with open(TOML_PATH, 'w') as f:
+        f.writelines(toml)
+    print("Building PBOs")
+    shutil.rmtree("..\\releases")
+    subprocess.call("..\\build_release_main.bat")
+    for index, line in enumerate(toml):
+        toml[index] = line.replace("darkmap", "darkmap_ace")
+    with open(TOML_PATH, 'w') as f:
+        f.writelines(toml)
+    subprocess.call("..\\build_release_ace.bat")
+    print("Built in {0}s".format(round(time() - timeTaken,2)))
+
 if __name__ == '__main__':
     main()
+    build_both_pbos()
     #preview_image()

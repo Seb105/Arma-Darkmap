@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            // "ace_map",
+            "ace_map",
             "A3_Ui_F",
             "A3_Missions_F_Beta", 
             "A3_3DEN", 
