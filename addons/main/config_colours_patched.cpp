@@ -825,6 +825,371 @@ class CfgMarkerColors
         color[] = {0.58,0.576,0.58,1};
     };
 };
+class CfgMarkers
+{
+    class Empty
+    {
+        color[] = {0.601,0.491,0.821,1};
+    };
+    class Flag
+    {
+        color[] = {0.833,0.093,0.093,1};
+    };
+    class mil_objective: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class hd_dot: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class b_unknown: Flag {};
+    class group_0: b_unknown
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_unknown: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_inf: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_motor: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_armor: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_air: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_plane: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_naval: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class respawn_para: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Tree: Flag
+    {
+        color[] = {0.447,0.595,0.353,0.4};
+    };
+    class loc_SmallTree: loc_Tree
+    {
+        color[] = {0.447,0.595,0.353,0.4};
+    };
+    class loc_Bush: loc_Tree
+    {
+        color[] = {0.447,0.595,0.353,0.4};
+    };
+    class loc_Church: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Chapel: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Cross: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Rock: loc_Tree
+    {
+        color[] = {0.772,0.772,0.772,0.8};
+    };
+    class loc_Bunker: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Fountain: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_ViewTower: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Lighthouse: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Quay: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Fuelstation: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Hospital: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_BusStop: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Transmitter: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Stack: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Ruin: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_Tourism: loc_Tree
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_WaterTower: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_Power: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_PowerSolar: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_PowerWave: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_PowerWind: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class flag_NATO: Flag
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class Select: Flag
+    {
+        color[] = {0.833,0.093,0.093,1};
+    };
+    class waypoint
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class KIA
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Minefield
+    {
+        color[] = {0.9,0.102,0.102,1};
+    };
+    class GroundSupport_CAS_WEST
+    {
+        color[] = {0.311,0.617,0.923,1};
+    };
+    class GroundSupport_CAS_EAST: GroundSupport_CAS_WEST
+    {
+        color[] = {0.931,0.381,0.381,1};
+    };
+    class GroundSupport_CAS_RESISTANCE: GroundSupport_CAS_WEST
+    {
+        color[] = {0.381,0.931,0.381,1};
+    };
+    class GroundSupport_ARTY_WEST: GroundSupport_CAS_WEST {};
+    class GroundSupport_ARTY_EAST: GroundSupport_ARTY_WEST
+    {
+        color[] = {0.931,0.381,0.381,1};
+    };
+    class GroundSupport_ARTY_RESISTANCE: GroundSupport_ARTY_WEST
+    {
+        color[] = {0.381,0.931,0.381,1};
+    };
+    class MemoryFragment: Flag
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class RedCrystal: flag_NATO
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class White: flag_NATO
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_CivilDefense: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_CulturalProperty: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_DangerousForces: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class loc_SafetyZone: loc_Tree
+    {
+        color[] = {0.075,0.075,0.075,1};
+    };
+    class Contact_arrow1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrow2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrow3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrowLeft: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrowRight: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrowSmall1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_arrowSmall2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_art1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_art2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_circle1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_circle2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_circle3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_circle4: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dashedLine1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dashedLine2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dashedLine3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_defenseLine: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_defenseLineOver: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dot1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dot2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dot3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dot4: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_dot5: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilCircle1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilCircle2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilCircle3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDoodle1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDoodle2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDoodle3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDot1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDot2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilDot3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilTask1: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilTask2: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class Contact_pencilTask3: Flag
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+    class loc_LetterA: Empty
+    {
+        color[] = {0.85,0.85,0.85,1};
+    };
+};
 class CfgLocationTypes
 {
     class Mount

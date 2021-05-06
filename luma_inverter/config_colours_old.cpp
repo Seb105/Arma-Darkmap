@@ -1928,6 +1928,2142 @@ class CfgMarkerColors
 /*
     INCLUDE INHERITED ENTRIES: false
     SHOW CLASSES ONLY: false
+    CONFIG PATH: bin\config.bin/CfgMarkers
+    SOURCE ADD-ON(S): A3_Ui_F, A3_Ui_F_Curator, A3_Missions_F_Heli, A3_Ui_F_Exp, A3_Ui_F_Orange, A3_Ui_F_Enoch, A3_Missions_F_Oldman
+*/
+
+class CfgMarkers
+{
+    class Empty
+    {
+        color[] = {0.2,0.1,0.4,1};
+        name = "Empty";
+        icon = "\A3\ui_f\data\map\markers\system\empty_ca.paa";
+        size = 0;
+        scope = 1;
+        shadow = 0;
+        markerClass = "System";
+        showEditorMarkerColor = 1;
+    };
+    class Flag
+    {
+        name = "Flag";
+        icon = "\A3\ui_f\data\map\markers\military\mission_CA.paa";
+        color[] = {1,0,0,1};
+        size = 32;
+        shadow = 1;
+        scope = 0;
+    };
+    class mil_objective: Flag
+    {
+        name = "Objective";
+        icon = "\A3\ui_f\data\map\markers\military\objective_CA.paa";
+        color[] = {0,0,0,1};
+        size = 32;
+        shadow = 1;
+        scope = 1;
+        markerClass = "Military";
+    };
+    class mil_objective_noShadow: mil_objective
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_marker: mil_objective
+    {
+        name = "Marker";
+        icon = "\A3\ui_f\data\map\markers\military\marker_CA.paa";
+    };
+    class mil_marker_noShadow: mil_marker
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_flag: mil_objective
+    {
+        name = "Flag";
+        icon = "\A3\ui_f\data\map\markers\military\flag_CA.paa";
+    };
+    class mil_flag_noShadow: mil_flag
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_arrow: mil_objective
+    {
+        name = "Arrow";
+        icon = "\A3\ui_f\data\map\markers\military\arrow_CA.paa";
+    };
+    class mil_arrow_noShadow: mil_arrow
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_arrow2: mil_objective
+    {
+        name = "Arrow (filled)";
+        icon = "\A3\ui_f\data\map\markers\military\arrow2_CA.paa";
+    };
+    class mil_arrow2_noShadow: mil_arrow2
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_ambush: mil_objective
+    {
+        name = "Ambush";
+        icon = "\A3\ui_f\data\map\markers\military\ambush_CA.paa";
+    };
+    class mil_ambush_noShadow: mil_ambush
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_destroy: mil_objective
+    {
+        name = "Destroy";
+        icon = "\A3\ui_f\data\map\markers\military\destroy_CA.paa";
+    };
+    class mil_destroy_noShadow: mil_destroy
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_start: mil_objective
+    {
+        name = "Start";
+        icon = "\A3\ui_f\data\map\markers\military\start_CA.paa";
+    };
+    class mil_start_noShadow: mil_start
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_end: mil_objective
+    {
+        name = "End";
+        icon = "\A3\ui_f\data\map\markers\military\end_CA.paa";
+    };
+    class mil_end_noShadow: mil_end
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_pickup: mil_objective
+    {
+        name = "Pick Up";
+        icon = "\A3\ui_f\data\map\markers\military\pickup_CA.paa";
+    };
+    class mil_pickup_noShadow: mil_pickup
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_join: mil_objective
+    {
+        name = "Join";
+        icon = "\A3\ui_f\data\map\markers\military\join_CA.paa";
+    };
+    class mil_join_noShadow: mil_join
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_warning: mil_objective
+    {
+        name = "Warning";
+        icon = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+    };
+    class mil_warning_noShadow: mil_warning
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_unknown: mil_objective
+    {
+        name = "Unknown";
+        icon = "\A3\ui_f\data\map\markers\military\unknown_CA.paa";
+    };
+    class mil_unknown_noShadow: mil_unknown
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_circle: mil_objective
+    {
+        name = "Circle";
+        icon = "\A3\ui_f\data\map\markers\military\circle_CA.paa";
+    };
+    class mil_circle_noShadow: mil_circle
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_dot: mil_objective
+    {
+        name = "Dot";
+        icon = "\A3\ui_f\data\map\markers\military\dot_CA.paa";
+    };
+    class mil_dot_noShadow: mil_dot
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_box: mil_objective
+    {
+        name = "Square";
+        icon = "\A3\ui_f\data\map\markers\military\box_CA.paa";
+    };
+    class mil_box_noShadow: mil_box
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class mil_triangle: mil_objective
+    {
+        name = "Triangle";
+        icon = "\A3\ui_f\data\map\markers\military\triangle_CA.paa";
+    };
+    class mil_triangle_noShadow: mil_triangle
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_dot: Flag
+    {
+        name = "Dot";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\dot_CA.paa";
+        color[] = {0,0,0,1};
+        size = 32;
+        shadow = 1;
+        scope = 2;
+        markerClass = "draw";
+    };
+    class hd_dot_noShadow: hd_dot
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_objective: hd_dot
+    {
+        name = "Objective";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\objective_CA.paa";
+    };
+    class hd_objective_noShadow: hd_objective
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_flag: hd_dot
+    {
+        name = "Flag";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\flag_CA.paa";
+    };
+    class hd_flag_noShadow: hd_flag
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_arrow: hd_dot
+    {
+        name = "Arrow";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\arrow_CA.paa";
+    };
+    class hd_arrow_noShadow: hd_arrow
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_ambush: hd_dot
+    {
+        name = "Ambush";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\ambush_CA.paa";
+    };
+    class hd_ambush_noShadow: hd_ambush
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_destroy: hd_dot
+    {
+        name = "Destroy";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\destroy_CA.paa";
+    };
+    class hd_destroy_noShadow: hd_destroy
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_start: hd_dot
+    {
+        name = "Start";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\start_CA.paa";
+    };
+    class hd_start_noShadow: hd_start
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_end: hd_dot
+    {
+        name = "End";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\end_CA.paa";
+    };
+    class hd_end_noShadow: hd_end
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_pickup: hd_dot
+    {
+        name = "Pick Up";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\pickup_CA.paa";
+    };
+    class hd_pickup_noShadow: hd_pickup
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_join: hd_dot
+    {
+        name = "Join";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\join_CA.paa";
+    };
+    class hd_join_noShadow: hd_join
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_warning: hd_dot
+    {
+        name = "Warning";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\warning_CA.paa";
+    };
+    class hd_warning_noShadow: hd_warning
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class hd_unknown: hd_dot
+    {
+        name = "Unknown";
+        icon = "\A3\ui_f\data\map\markers\handdrawn\unknown_CA.paa";
+    };
+    class hd_unknown_noShadow: hd_unknown
+    {
+        scope = 0;
+        shadow = 0;
+    };
+    class b_unknown: Flag
+    {
+        name = "Unknown";
+        icon = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+        side = 1;
+        size = 29;
+        scope = 1;
+        shadow = 0;
+        color[] = {"(profilenamespace getvariable ['Map_BLUFOR_R',0])","(profilenamespace getvariable ['Map_BLUFOR_G',1])","(profilenamespace getvariable ['Map_BLUFOR_B',1])","(profilenamespace getvariable ['Map_BLUFOR_A',0.8])"};
+        markerClass = "NATO_BLUFOR";
+        showEditorMarkerColor = 1;
+    };
+    class o_unknown: b_unknown
+    {
+        icon = "\A3\ui_f\data\map\markers\nato\o_unknown.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_unknown.paa";
+        side = 0;
+        color[] = {"(profilenamespace getvariable ['Map_OPFOR_R',0])","(profilenamespace getvariable ['Map_OPFOR_G',1])","(profilenamespace getvariable ['Map_OPFOR_B',1])","(profilenamespace getvariable ['Map_OPFOR_A',0.8])"};
+        markerClass = "NATO_OPFOR";
+    };
+    class n_unknown: b_unknown
+    {
+        icon = "\A3\ui_f\data\map\markers\nato\n_unknown.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_unknown.paa";
+        side = 1;
+        color[] = {"(profilenamespace getvariable ['Map_Independent_R',0])","(profilenamespace getvariable ['Map_Independent_G',1])","(profilenamespace getvariable ['Map_Independent_B',1])","(profilenamespace getvariable ['Map_Independent_A',0.8])"};
+        markerClass = "NATO_Independent";
+    };
+    class b_inf: b_unknown
+    {
+        name = "Infantry";
+        icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+    };
+    class o_inf: o_unknown
+    {
+        name = "Infantry";
+        icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+    };
+    class n_inf: n_unknown
+    {
+        name = "Infantry";
+        icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+    };
+    class b_motor_inf: b_unknown
+    {
+        name = "Motorized";
+        icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+    };
+    class o_motor_inf: o_unknown
+    {
+        name = "Motorized";
+        icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+    };
+    class n_motor_inf: n_unknown
+    {
+        name = "Motorized";
+        icon = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_motor_inf.paa";
+    };
+    class b_mech_inf: b_unknown
+    {
+        name = "Mechanized";
+        icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+    };
+    class o_mech_inf: o_unknown
+    {
+        name = "Mechanized";
+        icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+    };
+    class n_mech_inf: n_unknown
+    {
+        name = "Mechanized";
+        icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
+    };
+    class b_armor: b_unknown
+    {
+        name = "Armor";
+        icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+    };
+    class o_armor: o_unknown
+    {
+        name = "Armor";
+        icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+    };
+    class n_armor: n_unknown
+    {
+        name = "Armor";
+        icon = "\A3\ui_f\data\map\markers\nato\n_armor.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_armor.paa";
+    };
+    class b_recon: b_unknown
+    {
+        name = "Recon";
+        icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+    };
+    class o_recon: o_unknown
+    {
+        name = "Recon";
+        icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+    };
+    class n_recon: n_unknown
+    {
+        name = "Recon";
+        icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
+    };
+    class b_air: b_unknown
+    {
+        name = "Helicopter";
+        icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+    };
+    class o_air: o_unknown
+    {
+        name = "Helicopter";
+        icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+    };
+    class n_air: n_unknown
+    {
+        name = "Helicopter";
+        icon = "\A3\ui_f\data\map\markers\nato\n_air.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_air.paa";
+    };
+    class b_plane: b_unknown
+    {
+        name = "Plane";
+        icon = "\A3\ui_f\data\map\markers\nato\b_plane.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_plane.paa";
+    };
+    class o_plane: o_unknown
+    {
+        name = "Plane";
+        icon = "\A3\ui_f\data\map\markers\nato\o_plane.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_plane.paa";
+    };
+    class n_plane: n_unknown
+    {
+        name = "Plane";
+        icon = "\A3\ui_f\data\map\markers\nato\n_plane.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_plane.paa";
+    };
+    class b_uav: b_unknown
+    {
+        name = "UAV";
+        icon = "\A3\ui_f\data\map\markers\nato\b_uav.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_uav.paa";
+    };
+    class o_uav: o_unknown
+    {
+        name = "UAV";
+        icon = "\A3\ui_f\data\map\markers\nato\o_uav.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_uav.paa";
+    };
+    class n_uav: n_unknown
+    {
+        name = "UAV";
+        icon = "\A3\ui_f\data\map\markers\nato\n_uav.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_uav.paa";
+    };
+    class b_naval: b_unknown
+    {
+        name = "Naval";
+        icon = "\A3\ui_f\data\map\markers\nato\b_naval.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_naval.paa";
+    };
+    class o_naval: o_unknown
+    {
+        name = "Naval";
+        icon = "\A3\ui_f\data\map\markers\nato\o_naval.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_naval.paa";
+    };
+    class n_naval: n_unknown
+    {
+        name = "Naval";
+        icon = "\A3\ui_f\data\map\markers\nato\n_naval.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_naval.paa";
+    };
+    class b_med: b_unknown
+    {
+        name = "Medical";
+        icon = "\A3\ui_f\data\map\markers\nato\b_med.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_med.paa";
+    };
+    class o_med: o_unknown
+    {
+        name = "Medical";
+        icon = "\A3\ui_f\data\map\markers\nato\o_med.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_med.paa";
+    };
+    class n_med: n_unknown
+    {
+        name = "Medical";
+        icon = "\A3\ui_f\data\map\markers\nato\n_med.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_med.paa";
+    };
+    class b_art: b_unknown
+    {
+        name = "Artillery";
+        icon = "\A3\ui_f\data\map\markers\nato\b_art.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_art.paa";
+    };
+    class o_art: o_unknown
+    {
+        name = "Artillery";
+        icon = "\A3\ui_f\data\map\markers\nato\o_art.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_art.paa";
+    };
+    class n_art: n_unknown
+    {
+        name = "Artillery";
+        icon = "\A3\ui_f\data\map\markers\nato\n_art.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_art.paa";
+    };
+    class b_mortar: b_unknown
+    {
+        name = "Mortar";
+        icon = "\A3\ui_f\data\map\markers\nato\b_mortar.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_mortar.paa";
+    };
+    class o_mortar: o_unknown
+    {
+        name = "Mortar";
+        icon = "\A3\ui_f\data\map\markers\nato\o_mortar.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_mortar.paa";
+    };
+    class n_mortar: n_unknown
+    {
+        name = "Mortar";
+        icon = "\A3\ui_f\data\map\markers\nato\n_mortar.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_mortar.paa";
+    };
+    class b_hq: b_unknown
+    {
+        name = "HQ";
+        icon = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
+    };
+    class o_hq: o_unknown
+    {
+        name = "HQ";
+        icon = "\A3\ui_f\data\map\markers\nato\o_hq.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_hq.paa";
+    };
+    class n_hq: n_unknown
+    {
+        name = "HQ";
+        icon = "\A3\ui_f\data\map\markers\nato\n_hq.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_hq.paa";
+    };
+    class b_support: b_unknown
+    {
+        name = "Support";
+        icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+    };
+    class o_support: o_unknown
+    {
+        name = "Support";
+        icon = "\A3\ui_f\data\map\markers\nato\o_support.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_support.paa";
+    };
+    class n_support: n_unknown
+    {
+        name = "Support";
+        icon = "\A3\ui_f\data\map\markers\nato\n_support.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_support.paa";
+    };
+    class b_maint: b_unknown
+    {
+        name = "Maintenance";
+        icon = "\A3\ui_f\data\map\markers\nato\b_maint.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_maint.paa";
+    };
+    class o_maint: o_unknown
+    {
+        name = "Maintenance";
+        icon = "\A3\ui_f\data\map\markers\nato\o_maint.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_maint.paa";
+    };
+    class n_maint: n_unknown
+    {
+        name = "Maintenance";
+        icon = "\A3\ui_f\data\map\markers\nato\n_maint.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_maint.paa";
+    };
+    class b_service: b_unknown
+    {
+        name = "Service";
+        icon = "\A3\ui_f\data\map\markers\nato\b_service.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_service.paa";
+    };
+    class o_service: o_unknown
+    {
+        name = "Service";
+        icon = "\A3\ui_f\data\map\markers\nato\o_service.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_service.paa";
+    };
+    class n_service: n_unknown
+    {
+        name = "Service";
+        icon = "\A3\ui_f\data\map\markers\nato\n_service.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_service.paa";
+    };
+    class b_installation: b_unknown
+    {
+        name = "Installation";
+        icon = "\A3\ui_f\data\map\markers\nato\b_installation.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_installation.paa";
+    };
+    class o_installation: o_unknown
+    {
+        name = "Installation";
+        icon = "\A3\ui_f\data\map\markers\nato\o_installation.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_installation.paa";
+    };
+    class n_installation: n_unknown
+    {
+        name = "Installation";
+        icon = "\A3\ui_f\data\map\markers\nato\n_installation.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_installation.paa";
+    };
+    class u_installation: n_unknown
+    {
+        name = "Installation";
+        icon = "\A3\ui_f\data\map\markers\nato\u_installation.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\u_installation.paa";
+    };
+    class b_antiair: b_unknown
+    {
+        name = "Anti-Air";
+        icon = "\A3\ui_f\data\map\markers\nato\b_antiair.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\b_antiair.paa";
+    };
+    class o_antiair: o_unknown
+    {
+        name = "Anti-Air";
+        icon = "\A3\ui_f\data\map\markers\nato\o_antiair.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\o_antiair.paa";
+    };
+    class n_antiair: n_unknown
+    {
+        name = "Anti-Air";
+        icon = "\A3\ui_f\data\map\markers\nato\n_antiair.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\n_antiair.paa";
+    };
+    class c_unknown: b_unknown
+    {
+        icon = "\A3\ui_f\data\map\markers\nato\c_unknown.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\c_unknown.paa";
+        side = 1;
+        color[] = {"color_Civilian",1};
+        markerClass = "NATO_Civilian";
+    };
+    class c_car: c_unknown
+    {
+        name = "Car";
+        icon = "\A3\ui_f\data\map\markers\nato\c_car.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\c_car.paa";
+    };
+    class c_ship: c_unknown
+    {
+        name = "Ship";
+        icon = "\A3\ui_f\data\map\markers\nato\c_ship.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\c_ship.paa";
+    };
+    class c_air: c_unknown
+    {
+        name = "Helicopter";
+        icon = "\A3\ui_f\data\map\markers\nato\c_air.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\c_air.paa";
+    };
+    class c_plane: c_unknown
+    {
+        name = "Plane";
+        icon = "\A3\ui_f\data\map\markers\nato\c_plane.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\c_plane.paa";
+    };
+    class group_0: b_unknown
+    {
+        name = "Fire Team";
+        icon = "\A3\ui_f\data\map\markers\nato\group_0.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_0.paa";
+        markerClass = "NATO_Sizes";
+        color[] = {0,0,0,1};
+        commander = "Corporal";
+    };
+    class group_1: group_0
+    {
+        name = "Squad";
+        icon = "\A3\ui_f\data\map\markers\nato\group_1.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_1.paa";
+        commander = "Sergeant";
+    };
+    class group_2: group_0
+    {
+        name = "Section";
+        icon = "\A3\ui_f\data\map\markers\nato\group_2.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_2.paa";
+        commander = "Sergeant";
+    };
+    class group_3: group_0
+    {
+        name = "Platoon";
+        icon = "\A3\ui_f\data\map\markers\nato\group_3.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_3.paa";
+        commander = "Lieutenant";
+    };
+    class group_4: group_0
+    {
+        name = "Company";
+        icon = "\A3\ui_f\data\map\markers\nato\group_4.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_4.paa";
+        commander = "Captain";
+    };
+    class group_5: group_0
+    {
+        name = "Battalion";
+        icon = "\A3\ui_f\data\map\markers\nato\group_5.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_5.paa";
+        commander = "Colonel";
+    };
+    class group_6: group_0
+    {
+        name = "Regiment";
+        icon = "\A3\ui_f\data\map\markers\nato\group_6.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_6.paa";
+        commander = "Colonel";
+    };
+    class group_7: group_0
+    {
+        name = "Brigade";
+        icon = "\A3\ui_f\data\map\markers\nato\group_7.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_7.paa";
+        commander = "General";
+    };
+    class group_8: group_0
+    {
+        name = "Division";
+        icon = "\A3\ui_f\data\map\markers\nato\group_8.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_8.paa";
+        commander = "General";
+    };
+    class group_9: group_0
+    {
+        name = "Corps";
+        icon = "\A3\ui_f\data\map\markers\nato\group_9.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_9.paa";
+        commander = "General";
+    };
+    class group_10: group_0
+    {
+        name = "Army";
+        icon = "\A3\ui_f\data\map\markers\nato\group_10.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_10.paa";
+        commander = "General";
+    };
+    class group_11: group_0
+    {
+        name = "Army Group";
+        icon = "\A3\ui_f\data\map\markers\nato\group_11.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\group_11.paa";
+        commander = "General";
+    };
+    class respawn_unknown: Flag
+    {
+        scope = 1;
+        name = "Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_unknown_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_unknown_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_inf: Flag
+    {
+        scope = 1;
+        name = "Infantry Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_inf_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_inf_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_motor: Flag
+    {
+        scope = 1;
+        name = "Car Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_motor_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_motor_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_armor: Flag
+    {
+        scope = 1;
+        name = "Armor Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_armor_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_armor_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_air: Flag
+    {
+        scope = 1;
+        name = "Helicopter Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_air_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_air_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_plane: Flag
+    {
+        scope = 1;
+        name = "Plane Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_plane_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_plane_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_naval: Flag
+    {
+        scope = 1;
+        name = "Naval Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_naval_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_naval_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class respawn_para: Flag
+    {
+        scope = 1;
+        name = "Airborne Respawn";
+        icon = "\A3\ui_f\data\map\markers\nato\respawn_para_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\nato\respawn_para_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        markerClass = "NATO_Respawn";
+    };
+    class loc_Tree: Flag
+    {
+        name = "Tree";
+        icon = "\A3\ui_f\data\map\mapcontrol\tree_CA.paa";
+        color[] = {0.45,0.64,0.33,0.4};
+        size = 12;
+        shadow = 0;
+        scope = 1;
+        markerClass = "Locations";
+        showEditorMarkerColor = 1;
+    };
+    class loc_SmallTree: loc_Tree
+    {
+        name = "Small Tree";
+        icon = "\A3\ui_f\data\map\mapcontrol\SmallTree_CA.paa";
+        size = 12;
+        color[] = {0.45,0.64,0.33,0.4};
+        showEditorMarkerColor = 1;
+    };
+    class loc_Bush: loc_Tree
+    {
+        name = "Bush";
+        icon = "\A3\ui_f\data\map\mapcontrol\Bush_CA.paa";
+        size = 7;
+        color[] = {0.45,0.64,0.33,0.4};
+        showEditorMarkerColor = 1;
+    };
+    class loc_Church: loc_Tree
+    {
+        name = "Church";
+        icon = "\A3\ui_f\data\map\mapcontrol\Church_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Chapel: loc_Tree
+    {
+        name = "Chapel";
+        icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
+        size = 24;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Cross: loc_Tree
+    {
+        name = "Cross";
+        icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
+        size = 24;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Rock: loc_Tree
+    {
+        name = "Rock";
+        icon = "\A3\ui_f\data\map\mapcontrol\Rock_CA.paa";
+        size = 12;
+        color[] = {0.1,0.1,0.1,0.8};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Bunker: loc_Tree
+    {
+        name = "Bunker";
+        icon = "\A3\ui_f\data\map\mapcontrol\Bunker_CA.paa";
+        size = 14;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Fountain: loc_Tree
+    {
+        name = "Fountain";
+        icon = "\A3\ui_f\data\map\mapcontrol\Fountain_CA.paa";
+        size = 11;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_ViewTower: loc_Tree
+    {
+        name = "View Tower";
+        icon = "\A3\ui_f\data\map\mapcontrol\ViewTower_CA.paa";
+        size = 16;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Lighthouse: loc_Tree
+    {
+        name = "Lighthouse";
+        icon = "\A3\ui_f\data\map\mapcontrol\Lighthouse_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Quay: loc_Tree
+    {
+        name = "Pier";
+        icon = "\A3\ui_f\data\map\mapcontrol\Quay_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Fuelstation: loc_Tree
+    {
+        name = "Fuel Station";
+        icon = "\A3\ui_f\data\map\mapcontrol\Fuelstation_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Hospital: loc_Tree
+    {
+        name = "Hospital";
+        icon = "\A3\ui_f\data\map\mapcontrol\Hospital_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_BusStop: loc_Tree
+    {
+        name = "Bus Stop";
+        icon = "\A3\ui_f\data\map\mapcontrol\BusStop_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Transmitter: loc_Tree
+    {
+        name = "Radio Tower";
+        icon = "\A3\ui_f\data\map\mapcontrol\Transmitter_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Stack: loc_Tree
+    {
+        name = "Chimney Stack";
+        icon = "\A3\ui_f\data\map\mapcontrol\Stack_CA.paa";
+        size = 20;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Ruin: loc_Tree
+    {
+        name = "Ruin";
+        icon = "\A3\ui_f\data\map\mapcontrol\Ruin_CA.paa";
+        size = 16;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Tourism: loc_Tree
+    {
+        name = "Hotel";
+        icon = "\A3\ui_f\data\map\mapcontrol\Tourism_CA.paa";
+        size = 16;
+        color[] = {0,0,0,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_WaterTower: loc_Tree
+    {
+        name = "Water Tower";
+        icon = "\A3\ui_f\data\map\mapcontrol\WaterTower_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Power: loc_Tree
+    {
+        name = "Power Plant";
+        icon = "\A3\ui_f\data\map\mapcontrol\Power_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_PowerSolar: loc_Tree
+    {
+        name = "Solar Power Plant";
+        icon = "\A3\ui_f\data\map\mapcontrol\PowerSolar_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_PowerWave: loc_Tree
+    {
+        name = "Wave Power Plant";
+        icon = "\A3\ui_f\data\map\mapcontrol\PowerWave_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_PowerWind: loc_Tree
+    {
+        name = "Wind Power Plant";
+        icon = "\A3\ui_f\data\map\mapcontrol\PowerWind_CA.paa";
+        size = 24;
+        color[] = {1,1,1,1};
+        showEditorMarkerColor = 0;
+    };
+    class loc_Fortress: loc_Bunker
+    {
+        scope = 0;
+    };
+    class flag_NATO: Flag
+    {
+        name = "NATO";
+        icon = "\A3\ui_f\data\map\markers\flags\nato_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\nato_ca.paa";
+        size = 32;
+        scope = 1;
+        shadow = 0;
+        color[] = {1,1,1,1};
+        markerClass = "Flags";
+    };
+    class flag_CSAT: flag_NATO
+    {
+        name = "CSAT";
+        icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+    };
+    class flag_AAF: flag_NATO
+    {
+        name = "Altis Armed Forces";
+        icon = "\A3\ui_f\data\map\markers\flags\AAF_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\AAF_ca.paa";
+    };
+    class flag_Altis: flag_NATO
+    {
+        name = "Altis";
+        icon = "\A3\ui_f\data\map\markers\flags\Altis_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Altis_ca.paa";
+    };
+    class flag_AltisColonial: flag_NATO
+    {
+        name = "Altis (Colonial)";
+        icon = "\A3\ui_f\data\map\markers\flags\AltisColonial_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\AltisColonial_ca.paa";
+    };
+    class flag_FIA: flag_NATO
+    {
+        name = "FIA";
+        icon = "\A3\ui_f\data\map\markers\flags\FIA_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\FIA_ca.paa";
+    };
+    class flag_EU: flag_NATO
+    {
+        name = "European Union";
+        icon = "\A3\ui_f\data\map\markers\flags\EU_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\EU_ca.paa";
+    };
+    class flag_UN: flag_NATO
+    {
+        name = "United Nations";
+        icon = "\A3\ui_f\data\map\markers\flags\UN_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\UN_ca.paa";
+    };
+    class flag_Belgium: flag_NATO
+    {
+        name = "Belgium";
+        icon = "\A3\ui_f\data\map\markers\flags\Belgium_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Belgium_ca.paa";
+    };
+    class flag_Canada: flag_NATO
+    {
+        name = "Canada";
+        icon = "\A3\ui_f\data\map\markers\flags\Canada_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Canada_ca.paa";
+    };
+    class flag_Catalonia: flag_NATO
+    {
+        name = "Catalonia";
+        icon = "\A3\ui_f\data\map\markers\flags\Catalonia_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Catalonia_ca.paa";
+        scope = 0;
+    };
+    class flag_Croatia: flag_NATO
+    {
+        name = "Croatia";
+        icon = "\A3\ui_f\data\map\markers\flags\Croatia_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Croatia_ca.paa";
+    };
+    class flag_CzechRepublic: flag_NATO
+    {
+        name = "Czech Republic";
+        icon = "\A3\ui_f\data\map\markers\flags\CzechRepublic_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\CzechRepublic_ca.paa";
+    };
+    class flag_Denmark: flag_NATO
+    {
+        name = "Denmark";
+        icon = "\A3\ui_f\data\map\markers\flags\Denmark_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Denmark_ca.paa";
+    };
+    class flag_France: flag_NATO
+    {
+        name = "France";
+        icon = "\A3\ui_f\data\map\markers\flags\France_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\France_ca.paa";
+    };
+    class flag_Georgia: flag_NATO
+    {
+        name = "Georgia";
+        icon = "\A3\ui_f\data\map\markers\flags\Georgia_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Georgia_ca.paa";
+    };
+    class flag_Germany: flag_NATO
+    {
+        name = "Germany";
+        icon = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
+    };
+    class flag_Greece: flag_NATO
+    {
+        name = "Greece";
+        icon = "\A3\ui_f\data\map\markers\flags\Greece_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Greece_ca.paa";
+    };
+    class flag_Hungary: flag_NATO
+    {
+        name = "Hungary";
+        icon = "\A3\ui_f\data\map\markers\flags\Hungary_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Hungary_ca.paa";
+    };
+    class flag_Iceland: flag_NATO
+    {
+        name = "Iceland";
+        icon = "\A3\ui_f\data\map\markers\flags\Iceland_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Iceland_ca.paa";
+    };
+    class flag_Italy: flag_NATO
+    {
+        name = "Italy";
+        icon = "\A3\ui_f\data\map\markers\flags\Italy_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Italy_ca.paa";
+    };
+    class flag_Luxembourg: flag_NATO
+    {
+        name = "Luxembourg";
+        icon = "\A3\ui_f\data\map\markers\flags\Luxembourg_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Luxembourg_ca.paa";
+    };
+    class flag_Netherlands: flag_NATO
+    {
+        name = "Netherlands";
+        icon = "\A3\ui_f\data\map\markers\flags\Netherlands_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Netherlands_ca.paa";
+    };
+    class flag_Norway: flag_NATO
+    {
+        name = "Norway";
+        icon = "\A3\ui_f\data\map\markers\flags\Norway_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Norway_ca.paa";
+    };
+    class flag_Poland: flag_NATO
+    {
+        name = "Poland";
+        icon = "\A3\ui_f\data\map\markers\flags\Poland_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Poland_ca.paa";
+    };
+    class flag_Portugal: flag_NATO
+    {
+        name = "Portugal";
+        icon = "\A3\ui_f\data\map\markers\flags\Portugal_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Portugal_ca.paa";
+    };
+    class flag_Slovakia: flag_NATO
+    {
+        name = "Slovakia";
+        icon = "\A3\ui_f\data\map\markers\flags\Slovakia_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Slovakia_ca.paa";
+    };
+    class flag_Slovenia: flag_NATO
+    {
+        name = "Slovenia";
+        icon = "\A3\ui_f\data\map\markers\flags\Slovenia_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Slovenia_ca.paa";
+    };
+    class flag_Spain: flag_NATO
+    {
+        name = "Spain";
+        icon = "\A3\ui_f\data\map\markers\flags\Spain_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\Spain_ca.paa";
+    };
+    class flag_UK: flag_NATO
+    {
+        name = "UK";
+        icon = "\A3\ui_f\data\map\markers\flags\UK_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\UK_ca.paa";
+    };
+    class flag_USA: flag_NATO
+    {
+        name = "USA";
+        icon = "\A3\ui_f\data\map\markers\flags\USA_ca.paa";
+        texture = "\A3\ui_f\data\map\markers\flags\USA_ca.paa";
+    };
+    class EmptyIcon: Flag
+    {
+        icon = "#(argb,8,8,3)color(0,0,0,0)";
+        scope = 0;
+        shadow = 0;
+    };
+    class Select: Flag
+    {
+        name = "Select";
+        icon = "\A3\ui_f\data\igui\cfg\islandmap\iconplayer_ca.paa";
+        color[] = {1,0,0,1};
+        scope = 1;
+        shadow = 0;
+        markerClass = "System";
+    };
+    class waypoint
+    {
+        name = "Waypoint";
+        icon = "\A3\ui_f\data\map\groupicons\waypoint.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        scope = 1;
+        size = 29;
+    };
+    class selector_selectable: waypoint
+    {
+        name = "Selector - Selectable";
+        icon = "\A3\ui_f\data\map\groupicons\selector_selectable_ca.paa";
+    };
+    class selector_selectedEnemy: waypoint
+    {
+        name = "Selector - Selected Enemy";
+        icon = "\A3\ui_f\data\map\groupicons\selector_selectedEnemy_ca.paa";
+    };
+    class selector_selectedFriendly: waypoint
+    {
+        name = "Selector - Selected Friendly";
+        icon = "\A3\ui_f\data\map\groupicons\selector_selectedFriendly_ca.paa";
+    };
+    class selector_selectedMission: waypoint
+    {
+        name = "Selector - Selected Mission";
+        icon = "\A3\ui_f\data\map\groupicons\selector_selectedMission_ca.paa";
+    };
+    class KIA
+    {
+        name = "KIA";
+        icon = "\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa";
+        color[] = {0,0,0,1};
+        shadow = 0;
+        scope = 1;
+        size = 29;
+    };
+    class Minefield
+    {
+        name = "Minefield";
+        icon = "\a3\Ui_F_Curator\Data\CfgMarkers\minefield_ca.paa";
+        color[] = {0.9,0,0,1};
+        shadow = 0;
+        scope = 1;
+        size = 29;
+        showEditorMarkerColor = 1;
+    };
+    class MinefieldAP: Minefield
+    {
+        name = "Minefield (AP)";
+        icon = "\a3\Ui_F_Curator\Data\CfgMarkers\minefieldAP_ca.paa";
+    };
+    class GroundSupport_CAS_WEST
+    {
+        name = "GroundSupport_CAS_WEST";
+        icon = "\a3\Modules_F_Curator\Data\portraitCASGunMissile_ca.paa";
+        texture = "\a3\Modules_F_Curator\Data\portraitCASGunMissile_ca.paa";
+        side = 1;
+        size = 29;
+        scope = 0;
+        shadow = 0;
+        color[] = {0,0.3,0.6,1};
+        markerClass = "GroundSupport_CAS_WEST";
+    };
+    class GroundSupport_CAS_EAST: GroundSupport_CAS_WEST
+    {
+        name = "GroundSupport_CAS_EAST";
+        color[] = {0.5,0,0,1};
+        markerClass = "GroundSupport_CAS_EAST";
+    };
+    class GroundSupport_CAS_RESISTANCE: GroundSupport_CAS_WEST
+    {
+        name = "GroundSupport_CAS_RESISTANCE";
+        color[] = {0,0.5,0,1};
+        markerClass = "GroundSupport_CAS_RESISTANCE";
+    };
+    class GroundSupport_ARTY_WEST: GroundSupport_CAS_WEST
+    {
+        name = "GroundSupport_ARTY_WEST";
+        icon = "\a3\Modules_F_Curator\Data\iconOrdnance_ca.paa";
+        texture = "\a3\Modules_F_Curator\Data\iconOrdnance_ca.paa";
+        markerClass = "GroundSupport_ARTY_WEST";
+    };
+    class GroundSupport_ARTY_EAST: GroundSupport_ARTY_WEST
+    {
+        name = "GroundSupport_ARTY_EAST";
+        color[] = {0.5,0,0,1};
+        markerClass = "GroundSupport_ARTY_EAST";
+    };
+    class GroundSupport_ARTY_RESISTANCE: GroundSupport_ARTY_WEST
+    {
+        name = "GroundSupport_ARTY_RESISTANCE";
+        color[] = {0,0.5,0,1};
+        markerClass = "GroundSupport_ARTY_RESISTANCE";
+    };
+    class flag_CTRG: flag_NATO
+    {
+        name = "CTRG";
+        icon = "\A3\Ui_f\data\Map\Markers\Flags\ctrg_ca.paa";
+    };
+    class flag_Viper: flag_NATO
+    {
+        name = "Viper";
+        icon = "\A3\Ui_f\data\Map\Markers\Flags\viper_ca.paa";
+    };
+    class flag_Syndicat: flag_NATO
+    {
+        name = "Syndikat";
+        icon = "\A3\Ui_f\data\Map\Markers\Flags\syndicat_ca.paa";
+    };
+    class flag_Tanoa: flag_NATO
+    {
+        name = "Tanoa";
+        icon = "\A3\Ui_f\data\Map\Markers\Flags\tanoa_ca.paa";
+    };
+    class flag_TanoaGendarmerie: flag_NATO
+    {
+        name = "Gendarmerie";
+        icon = "\A3\Ui_f\data\Map\Markers\Flags\tanoaGendarmerie_ca.paa";
+    };
+    class flag_IDAP: flag_NATO
+    {
+        name = "International Development & Aid Project";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\IDAP_ca.paa";
+        texture = "\A3\ui_f_orange\data\cfgmarkers\IDAP_ca.paa";
+        shadow = 1;
+    };
+    class MemoryFragment: Flag
+    {
+        scope = 0;
+        icon = "\A3\ui_f_orange\data\cfgmarkers\memoryFragment_ca.paa";
+        color[] = {1,1,1,1};
+        shadow = 0;
+        markerClass = "System";
+    };
+    class RedCrystal: flag_NATO
+    {
+        scope = 2;
+        name = "Red Crystal";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\redcrystal_ca.paa";
+        texture = "\A3\ui_f_orange\data\cfgmarkers\redcrystal_ca.paa";
+        color[] = {1,1,1,1};
+        shadow = 1;
+    };
+    class White: flag_NATO
+    {
+        scope = 2;
+        name = "White";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\white_ca.paa";
+        texture = "\A3\ui_f_orange\data\cfgmarkers\white_ca.paa";
+        color[] = {1,1,1,1};
+        shadow = 1;
+    };
+    class loc_CivilDefense: loc_Tree
+    {
+        size = 24;
+        name = "Civil Defense";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\civildefense.paa";
+        color[] = {1,1,1,1};
+    };
+    class loc_CulturalProperty: loc_Tree
+    {
+        size = 24;
+        name = "Cultural Property";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\culturalproperty_ca.paa";
+        color[] = {1,1,1,1};
+    };
+    class loc_DangerousForces: loc_Tree
+    {
+        size = 24;
+        name = "Dangerous Forces";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\dangerousforces_ca.paa";
+        color[] = {1,1,1,1};
+    };
+    class loc_SafetyZone: loc_Tree
+    {
+        size = 24;
+        name = "Safety Zone";
+        icon = "\A3\ui_f_orange\data\cfgmarkers\safetyzone_ca.paa";
+        color[] = {1,1,1,1};
+    };
+    class b_Ordnance: b_unknown
+    {
+        name = "Ordnance";
+        icon = "\a3\UI_F_Orange\Data\CfgMarkers\b_Ordnance_ca.paa";
+        texture = "\a3\UI_F_Orange\Data\CfgMarkers\b_Ordnance_ca.paa";
+    };
+    class o_Ordnance: o_unknown
+    {
+        name = "Ordnance";
+        icon = "\a3\UI_F_Orange\Data\CfgMarkers\o_Ordnance_ca.paa";
+        texture = "\a3\UI_F_Orange\Data\CfgMarkers\o_Ordnance_ca.paa";
+    };
+    class n_Ordnance: n_unknown
+    {
+        name = "Ordnance";
+        icon = "\a3\UI_F_Orange\Data\CfgMarkers\n_Ordnance_ca.paa";
+        texture = "\a3\UI_F_Orange\Data\CfgMarkers\n_Ordnance_ca.paa";
+    };
+    class flag_EAF: flag_NATO
+    {
+        name = "Livonian Defense Force";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\LDF_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\LDF_CA.paa";
+    };
+    class flag_Enoch: flag_NATO
+    {
+        name = "Livonia";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\Livonia_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\Livonia_CA.paa";
+    };
+    class flag_EnochLooters: flag_NATO
+    {
+        name = "Livonian Looters";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\LivoniaLooters_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\LivoniaLooters_CA.paa";
+    };
+    class flag_Astra: flag_NATO
+    {
+        name = "Astra";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\Astra_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\Astra_CA.paa";
+    };
+    class flag_Russia: flag_NATO
+    {
+        name = "Russia";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\Russia_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\Russia_CA.paa";
+    };
+    class flag_Spetsnaz: flag_NATO
+    {
+        name = "Spetsnaz";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\Spetsnaz_CA.paa";
+        texture = "\a3\UI_F_Enoch\Data\CfgMarkers\Spetsnaz_CA.paa";
+    };
+    class Contact_arrow1: Flag
+    {
+        scope = 0;
+        name = "arrow1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrow1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrow2: Flag
+    {
+        scope = 0;
+        name = "arrow2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrow2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrow3: Flag
+    {
+        scope = 0;
+        name = "arrow3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrow3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrowLeft: Flag
+    {
+        scope = 0;
+        name = "arrowLeft";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrowLeft_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrowRight: Flag
+    {
+        scope = 0;
+        name = "arrowRight";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrowRight_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrowSmall1: Flag
+    {
+        scope = 0;
+        name = "arrowSmall1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrowSmall1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_arrowSmall2: Flag
+    {
+        scope = 0;
+        name = "arrowSmall2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\arrowSmall2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_art1: Flag
+    {
+        scope = 0;
+        name = "art1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\art1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_art2: Flag
+    {
+        scope = 0;
+        name = "art2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\art2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_circle1: Flag
+    {
+        scope = 0;
+        name = "circle1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\circle1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_circle2: Flag
+    {
+        scope = 0;
+        name = "circle2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\circle2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_circle3: Flag
+    {
+        scope = 0;
+        name = "circle3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\circle3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_circle4: Flag
+    {
+        scope = 0;
+        name = "circle4";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\circle4_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dashedLine1: Flag
+    {
+        scope = 0;
+        name = "dashedLine1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dashedLine1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dashedLine2: Flag
+    {
+        scope = 0;
+        name = "dashedLine2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dashedLine2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dashedLine3: Flag
+    {
+        scope = 0;
+        name = "dashedLine3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dashedLine3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_defenseLine: Flag
+    {
+        scope = 0;
+        name = "defenseLine";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\defenseLine_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_defenseLineOver: Flag
+    {
+        scope = 0;
+        name = "defenseLineOver";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\defenseLineOver_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dot1: Flag
+    {
+        scope = 0;
+        name = "dot1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dot1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dot2: Flag
+    {
+        scope = 0;
+        name = "dot2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dot2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dot3: Flag
+    {
+        scope = 0;
+        name = "dot3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dot3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dot4: Flag
+    {
+        scope = 0;
+        name = "dot4";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dot4_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_dot5: Flag
+    {
+        scope = 0;
+        name = "dot5";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\dot5_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilCircle1: Flag
+    {
+        scope = 0;
+        name = "pencilCircle1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilCircle1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilCircle2: Flag
+    {
+        scope = 0;
+        name = "pencilCircle2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilCircle2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilCircle3: Flag
+    {
+        scope = 0;
+        name = "pencilCircle3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilCircle3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDoodle1: Flag
+    {
+        scope = 0;
+        name = "pencilDoodle1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDoodle1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDoodle2: Flag
+    {
+        scope = 0;
+        name = "pencilDoodle2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDoodle2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDoodle3: Flag
+    {
+        scope = 0;
+        name = "pencilDoodle3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDoodle3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDot1: Flag
+    {
+        scope = 0;
+        name = "pencilDot1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDot1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDot2: Flag
+    {
+        scope = 0;
+        name = "pencilDot2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDot2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilDot3: Flag
+    {
+        scope = 0;
+        name = "pencilDot3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilDot3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilTask1: Flag
+    {
+        scope = 0;
+        name = "pencilTask1";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilTask1_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilTask2: Flag
+    {
+        scope = 0;
+        name = "pencilTask2";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilTask2_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class Contact_pencilTask3: Flag
+    {
+        scope = 0;
+        name = "pencilTask3";
+        icon = "\a3\UI_F_Enoch\Data\CfgMarkers\pencilTask3_ca.paa";
+        shadow = 0;
+        markerClass = "Contact";
+        color[] = {0,0,0,1};
+    };
+    class loc_LetterA: Empty
+    {
+        name = "LetterA";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\a_ca.paa";
+        color[] = {0,0,0,1};
+        size = 18;
+        shadow = 1;
+        scope = 0;
+        markerClass = "Locations";
+        showEditorMarkerColor = 1;
+    };
+    class loc_Frame: loc_LetterA
+    {
+        name = "Frame";
+        icon = "\a3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\icon_ca.paa";
+        shadow = 0;
+        size = 25;
+    };
+    class loc_LetterB: loc_LetterA
+    {
+        name = "LetterB";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\b_ca.paa";
+    };
+    class loc_LetterC: loc_LetterA
+    {
+        name = "LetterC";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\c_ca.paa";
+    };
+    class loc_LetterD: loc_LetterA
+    {
+        name = "LetterD";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\d_ca.paa";
+    };
+    class loc_LetterE: loc_LetterA
+    {
+        name = "LetterE";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\e_ca.paa";
+    };
+    class loc_LetterF: loc_LetterA
+    {
+        name = "LetterF";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\f_ca.paa";
+    };
+    class loc_LetterG: loc_LetterA
+    {
+        name = "LetterG";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\g_ca.paa";
+    };
+    class loc_LetterH: loc_LetterA
+    {
+        name = "LetterH";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\h_ca.paa";
+    };
+    class loc_LetterI: loc_LetterA
+    {
+        name = "LetterI";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\i_ca.paa";
+    };
+    class loc_LetterJ: loc_LetterA
+    {
+        name = "LetterJ";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\j_ca.paa";
+    };
+    class loc_LetterK: loc_LetterA
+    {
+        name = "LetterK";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\k_ca.paa";
+    };
+    class loc_LetterL: loc_LetterA
+    {
+        name = "LetterL";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\l_ca.paa";
+    };
+    class loc_LetterM: loc_LetterA
+    {
+        name = "LetterM";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\m_ca.paa";
+    };
+    class loc_LetterN: loc_LetterA
+    {
+        name = "LetterN";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\n_ca.paa";
+    };
+    class loc_LetterO: loc_LetterA
+    {
+        name = "LetterO";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\o_ca.paa";
+    };
+    class loc_LetterP: loc_LetterA
+    {
+        name = "LetterP";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\p_ca.paa";
+    };
+    class loc_LetterQ: loc_LetterA
+    {
+        name = "LetterQ";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\q_ca.paa";
+    };
+    class loc_LetterR: loc_LetterA
+    {
+        name = "LetterR";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\r_ca.paa";
+    };
+    class loc_LetterS: loc_LetterA
+    {
+        name = "LetterS";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\s_ca.paa";
+    };
+    class loc_LetterT: loc_LetterA
+    {
+        name = "LetterT";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\t_ca.paa";
+    };
+    class loc_LetterU: loc_LetterA
+    {
+        name = "LetterU";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\u_ca.paa";
+    };
+    class loc_LetterV: loc_LetterA
+    {
+        name = "LetterV";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\v_ca.paa";
+    };
+    class loc_LetterW: loc_LetterA
+    {
+        name = "LetterW";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\w_ca.paa";
+    };
+    class loc_LetterX: loc_LetterA
+    {
+        name = "LetterX";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\x_ca.paa";
+    };
+    class loc_LetterY: loc_LetterA
+    {
+        name = "LetterY";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\y_ca.paa";
+    };
+    class loc_LetterZ: loc_LetterA
+    {
+        name = "LetterZ";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\letters\z_ca.paa";
+    };
+    class loc_Attack: loc_LetterA
+    {
+        name = "Attack";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\attack_ca.paa";
+    };
+    class loc_Box: loc_LetterA
+    {
+        name = "Box";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\box_ca.paa";
+    };
+    class loc_Rifle: loc_LetterA
+    {
+        name = "Rifle";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\rifle_ca.paa";
+    };
+    class loc_Truck: loc_LetterA
+    {
+        name = "Truck";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa";
+    };
+    class loc_refuel: loc_LetterA
+    {
+        name = "Refuel";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\refuel_ca.paa";
+    };
+    class loc_repair: loc_LetterA
+    {
+        name = "Repair";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\repair_ca.paa";
+    };
+    class loc_rearm: loc_LetterA
+    {
+        name = "Rearm";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\rearm_ca.paa";
+    };
+    class loc_interact: loc_LetterA
+    {
+        name = "Interact";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\interact_ca.paa";
+    };
+    class loc_boat: loc_LetterA
+    {
+        name = "Boat";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Boat_ca.paa";
+    };
+    class loc_car: loc_LetterA
+    {
+        name = "Car";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa";
+    };
+    class loc_help: loc_LetterA
+    {
+        name = "Help";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\help_ca.paa";
+    };
+    class loc_search: loc_LetterA
+    {
+        name = "Search";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\search_ca.paa";
+    };
+    class loc_radio: loc_LetterA
+    {
+        name = "Radio";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Radio_ca.paa";
+    };
+    class loc_heal: loc_LetterA
+    {
+        name = "Heal";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Heal_ca.paa";
+    };
+    class loc_heli: loc_LetterA
+    {
+        name = "Heli";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Heli_ca.paa";
+    };
+    class loc_plane: loc_LetterA
+    {
+        name = "Plane";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Plane_ca.paa";
+    };
+    class loc_talk: loc_LetterA
+    {
+        name = "Talk";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Talk_ca.paa";
+    };
+    class loc_container: loc_LetterA
+    {
+        name = "container";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Container_ca.paa";
+    };
+    class loc_download: loc_LetterA
+    {
+        name = "Download";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Download_ca.paa";
+    };
+    class loc_use: loc_LetterA
+    {
+        name = "Use";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\Use_ca.paa";
+    };
+    class loc_mine: loc_LetterA
+    {
+        name = "Mine";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\mine_ca.paa";
+    };
+    class loc_meet: loc_LetterA
+    {
+        name = "Meet";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\meet_ca.paa";
+    };
+    class loc_destroy: loc_LetterA
+    {
+        name = "Destroy";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\destroy_ca.paa";
+    };
+    class loc_defend: loc_LetterA
+    {
+        name = "Defend";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\defend_ca.paa";
+    };
+    class loc_save: loc_LetterA
+    {
+        name = "Save";
+        icon = "\a3\Ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_saveas_ca.paa";
+    };
+    class loc_move: loc_LetterA
+    {
+        name = "Move";
+        icon = "\a3\ui_f\data\igui\cfg\simpletasks\types\move_ca.paa";
+    };
+    class loc_Pick: loc_LetterA
+    {
+        name = "Pick";
+        icon = "\a3\Ui_f\data\IGUI\Cfg\Actions\take_ca.paa";
+    };
+    class loc_Ambush: loc_LetterA
+    {
+        size = 17;
+        name = "Ambush";
+        icon = "\A3\Ui_f\data\Map\Markers\Military\ambush_ca.paa";
+    };
+    class loc_sdv: loc_LetterA
+    {
+        size = 17;
+        name = "SDV";
+        icon = "\a3\ui_f\data\gui\cfg\hints\SDV_ca.paa";
+    };
+};
+
+
+/*
+    INCLUDE INHERITED ENTRIES: false
+    SHOW CLASSES ONLY: false
     CONFIG PATH: bin\config.bin/CfgLocationTypes
     SOURCE ADD-ON(S): A3_Ui_F, A3_Ui_F_Orange, A3_Ui_F_Enoch
 */
