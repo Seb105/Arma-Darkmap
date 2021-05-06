@@ -4,6 +4,7 @@ import copy
 import colorsys
 from time import time
 from concurrent.futures import ProcessPoolExecutor
+import re
 
 OLD_PATH = "config_colours_old.cpp"
 NEW_PATH = "config_colours_patched.cpp"
@@ -38,21 +39,17 @@ def main():
     drawY = 0
     drawX = 0
     newlines = []
-    lineNo = 0
-    for line in lines:
-        lineNo += 1
+    for index, line in enumerate(lines):
         # Make sure we're dealing with a colour set
         startTxt = line.replace(" ","")[:5]
         if "class" in startTxt or "{" in startTxt[0] or "}" in startTxt[0]:
             newlines.append(line)
             continue
         if startTxt.find("color") == -1 or line.find("{") == -1:
-            #newlines.append(line)
             continue
         colour = line[line.find("{") : line.find("}")+1].replace("{","[").replace("}","]")
         colour = ast.literal_eval(colour)
         if type(colour[0]) is str:
-            #newlines.append(line)
             continue
 
         colourOld = copy.deepcopy(colour)
@@ -78,26 +75,67 @@ def main():
         newlines.append(line)
     print("Converted config in {0}s".format(round(time() - timeTaken,2)))
     timeTaken = time()
-    # Recursively remove empty config entries. This breaks inheritance acutally so don't.
-    # i = 0
-    # while True:
-    #     j = 0
-    #     deleteLines = []
-    #     for line in newlines[:-1]:
-    #         startTxt = line.replace(" ","")[0]
-    #         startTxtNext =  newlines[j+1].replace(" ","")[0]
-    #         if startTxt[0] == "{" and startTxtNext[0] == "}":
-    #             deleteLines.append(j-1)
-    #             deleteLines.append(j)
-    #             deleteLines.append(j+1)
-    #         j += 1
-    #     for index in deleteLines:
-    #         newlines[index] = ""
-    #     newlines = [line for line in newlines if line != ""]
-    #     if len(deleteLines) == 0: 
-    #         break
-    #     i += 1
-    # print("Removed empty classes in {0} iterations".format(i))
+
+    print("Removing unreferenced classes and simplifying empty classes")
+    iterations = 0
+    while True:
+        # Replace empty config brackets with simple declarations
+        deleteLines = []
+        for index, line in enumerate(newlines[:-1]):
+            startTxt = line.replace(" ","")[0]
+            startTxtNext =  newlines[index+1].replace(" ","")[0]
+            if startTxt[0] == "{" and startTxtNext[0] == "}":
+                classLine = newlines[index-1]
+                strIndex = classLine.find("\n")
+                classLine = classLine[:strIndex] + ";" + classLine[strIndex:]
+                newlines[index-1] = classLine
+                deleteLines.append(index)
+                deleteLines.append(index+1)
+            #index += 1
+        for index in deleteLines:
+            newlines[index] = ""
+        newlines = [line for line in newlines if line != ""]
+
+
+        # Remove classes that are not referenced and therefore not needed.
+        deleteLines = []
+        for index, line in enumerate(newlines):
+            lineWords = line.strip().split(" ")
+            if lineWords[0] != "class": continue # Only interested in removing classes
+            classType = lineWords[1].replace(":","")
+            if line.find(";") == -1: continue # If line does not contain semicolon then the class contains data
+            classType = classType.replace(";", "")
+            numOfReferences = len([l for l in newlines if ": "+classType+"\n" in l or ": "+classType+";" in l])
+            if numOfReferences == 0:
+                deleteLines.append(index)
+        for index in deleteLines:
+            newlines[index] = ""
+        newlines = [line for line in newlines if line != ""]
+        iterations += 1
+        if deleteLines == []: break
+    print("Simplified classes in {0} iterations and {1}s".format(iterations, round(time() - timeTaken,2)))
+    timeTaken = time()
+
+    # Inheriting undeclared class warnings#
+    print("WARNINGS:")
+    warnings = []
+    for index, line in enumerate(newlines):
+        lineWords = line.strip().split(" ")
+        if lineWords[0] != "class": continue
+        if lineWords[1][-1] != ":": continue # Is class inheriting?
+        inheritance = lineWords[2].replace(";", "")
+        declarations = [line for line in newlines if line.find("class " + inheritance) != -1]
+        # if len(declarations) > 0: print(inheritance, declarations) 
+        if len(declarations) == 0:
+            warning = "WARNING: class {0} is inherited but never declared".format(inheritance)
+            if warning not in warnings: warnings.append(warning)
+    if len(warnings) == 0:
+        print("No warnings")
+    else:
+        for warning in warnings:
+            print(warning)
+    print("Checked for warnings in {0}s".format(round(time() - timeTaken,2)))
+    timeTaken = time()
 
     print("Writing new config")
     with open(NEW_PATH, 'w') as f:

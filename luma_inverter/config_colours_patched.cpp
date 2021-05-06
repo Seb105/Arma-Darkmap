@@ -1,11 +1,5 @@
 class RscControlsGroupNoScrollbars;
 class RscFrame;
-class RscVignette;
-class RscMapControlTooltip;
-class RscPicture;
-class RscXListBox;
-class RscButtonMenuCancel;
-class RscMessageBox;
 class ctrlDefault;
 class RscText;
 class ctrlMap: ctrlDefault
@@ -38,9 +32,6 @@ class ctrlMap: ctrlDefault
     colorTrailsFill[] = {0.354,0.285,0.191,0.65};
     colorGrid[] = {0.772,0.772,0.772,0.6};
     colorGridMap[] = {0.772,0.772,0.772,0.6};
-    class LineMarker
-    {
-    };
     class Legend
     {
         color[] = {0.85,0.85,0.85,1};
@@ -62,12 +53,8 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class WaypointCompleted: Waypoint
-    {
-    };
-    class CustomMark: Waypoint
-    {
-    };
+    class WaypointCompleted: Waypoint;
+    class CustomMark: Waypoint;
     class Command: Waypoint
     {
         color[] = {0.075,0.075,0.075,1};
@@ -76,12 +63,8 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.447,0.595,0.353,0.4};
     };
-    class SmallTree: Bush
-    {
-    };
-    class Tree: SmallTree
-    {
-    };
+    class SmallTree: Bush;
+    class Tree: SmallTree;
     class Rock: SmallTree
     {
         color[] = {0.772,0.772,0.772,0.8};
@@ -94,68 +77,32 @@ class ctrlMap: ctrlDefault
     {
         color[] = {0.075,0.075,0.075,1};
     };
-    class Hospital: FuelStation
-    {
-    };
-    class Church: FuelStation
-    {
-    };
-    class Lighthouse: FuelStation
-    {
-    };
-    class Power: FuelStation
-    {
-    };
-    class PowerSolar: FuelStation
-    {
-    };
-    class PowerWave: FuelStation
-    {
-    };
-    class PowerWind: FuelStation
-    {
-    };
-    class Quay: FuelStation
-    {
-    };
-    class Transmitter: FuelStation
-    {
-    };
-    class Watertower: FuelStation
-    {
-    };
+    class Hospital: FuelStation;
+    class Church: FuelStation;
+    class Lighthouse: FuelStation;
+    class Power: FuelStation;
+    class PowerSolar: FuelStation;
+    class PowerWave: FuelStation;
+    class PowerWind: FuelStation;
+    class Quay: FuelStation;
+    class Transmitter: FuelStation;
+    class Watertower: FuelStation;
     class Cross: Waypoint
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Chapel: Cross
-    {
-    };
-    class Shipwreck: Cross
-    {
-    };
+    class Chapel: Cross;
+    class Shipwreck: Cross;
     class Bunker: Waypoint
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Fortress: Bunker
-    {
-    };
-    class Fountain: Bunker
-    {
-    };
-    class Ruin: Waypoint
-    {
-    };
-    class Stack: Waypoint
-    {
-    };
-    class Tourism: Waypoint
-    {
-    };
-    class ViewTower: Waypoint
-    {
-    };
+    class Fortress: Bunker;
+    class Fountain: Bunker;
+    class Ruin: Waypoint;
+    class Stack: Waypoint;
+    class Tourism: Waypoint;
+    class ViewTower: Waypoint;
 };
 class ctrlMapEmpty: ctrlMap
 {
@@ -306,18 +253,6 @@ class ctrlMapEmpty: ctrlMap
         color[] = {0.85,0.85,0.85,0};
     };
 };
-class ctrlMapMain: ctrlMap
-{
-};
-class RscMap
-{
-    class controls
-    {
-        class Map: RscMapControl
-        {
-        };
-    };
-};
 class RscMapControl
 {
     colorBackground[] = {0.128,0.103,0.086,1};
@@ -432,9 +367,6 @@ class RscMapControl
     class BusStop
     {
         color[] = {0.075,0.075,0.075,1};
-    };
-    class LineMarker
-    {
     };
     class Transmitter
     {
@@ -652,9 +584,7 @@ class RscDisplayStrategicMap
             colorRocks[] = {0.85,0.85,0.85,0};
             colorGrid[] = {0.85,0.85,0.85,0};
             colorGridMap[] = {0.85,0.85,0.85,0};
-            class Task: Task
-            {
-            };
+            class Task: Task;
         };
     };
     class controls
@@ -813,61 +743,13 @@ class RscDisplayStrategicMap
                 };
             };
         };
-        class Vignette: RscVignette
-        {
-        };
-        class Tooltip: RscMapControlTooltip
-        {
-        };
-        class Measure: RscControlsGroupNoScrollbars
-        {
-            class Controls
-            {
-                class km0: RscPicture
-                {
-                };
-                class km1: km0
-                {
-                };
-                class km2: km0
-                {
-                };
-                class km3: km0
-                {
-                };
-                class km4: km0
-                {
-                };
-                class m0: km0
-                {
-                };
-                class text_0: RscText
-                {
-                };
-                class text_m: text_0
-                {
-                };
-                class text_km: text_0
-                {
-                };
-            };
-        };
         class ButtonBackground: RscText
         {
             colorBackground[] = {0.85,0.85,0.85,0.7};
         };
-        class Missions: RscXListBox
-        {
-        };
-        class ButtonCancel: RscButtonMenuCancel
-        {
-        };
         class FadeEffect: RscText
         {
             colorBackground[] = {0.85,0.85,0.85,1};
-        };
-        class MessageBox: RscMessageBox
-        {
         };
     };
 };
@@ -921,33 +803,6 @@ class CfgMarkerColors
     {
         color[] = {0.075,0.075,0.075,1};
     };
-    class ColorWEST: Default
-    {
-    };
-    class ColorEAST: Default
-    {
-    };
-    class ColorGUER: Default
-    {
-    };
-    class ColorCIV: Default
-    {
-    };
-    class ColorUNKNOWN: Default
-    {
-    };
-    class colorBLUFOR: ColorWEST
-    {
-    };
-    class colorOPFOR: ColorEAST
-    {
-    };
-    class colorIndependent: ColorGUER
-    {
-    };
-    class colorCivilian: ColorCIV
-    {
-    };
     class Color1_FD_F: Default
     {
         color[] = {0.723,0.284,0.305,1};
@@ -987,37 +842,13 @@ class CfgLocationTypes
     {
         color[] = {0.566,0.719,0.515,0.7};
     };
-    class StrongpointArea: Strategic
-    {
-    };
-    class FlatArea: Strategic
-    {
-    };
-    class FlatAreaCity: FlatArea
-    {
-    };
-    class FlatAreaCitySmall: FlatAreaCity
-    {
-    };
     class CityCenter: Strategic
     {
         color[] = {0.566,0.719,0.515,0};
     };
-    class Airport: Strategic
-    {
-    };
     class NameMarine: Name
     {
         color[] = {0.182,0.498,0.859,0.8};
-    };
-    class NameCityCapital: Name
-    {
-    };
-    class NameCity: Name
-    {
-    };
-    class NameVillage: Name
-    {
     };
     class NameLocal: Name
     {
@@ -1055,241 +886,15 @@ class CfgLocationTypes
     {
         color[] = {0.566,0.719,0.515,1};
     };
-    class fakeTown: Name
-    {
-    };
     class Area
     {
         color[] = {0.85,0.85,0.85,0.5};
     };
-    class Flag: Hill
-    {
-    };
-    class b_unknown: Flag
-    {
-    };
-    class o_unknown: b_unknown
-    {
-    };
-    class n_unknown: b_unknown
-    {
-    };
-    class b_inf: b_unknown
-    {
-    };
-    class o_inf: o_unknown
-    {
-    };
-    class n_inf: n_unknown
-    {
-    };
-    class b_motor_inf: b_unknown
-    {
-    };
-    class o_motor_inf: o_unknown
-    {
-    };
-    class n_motor_inf: n_unknown
-    {
-    };
-    class b_mech_inf: b_unknown
-    {
-    };
-    class o_mech_inf: o_unknown
-    {
-    };
-    class n_mech_inf: n_unknown
-    {
-    };
-    class b_armor: b_unknown
-    {
-    };
-    class o_armor: o_unknown
-    {
-    };
-    class n_armor: n_unknown
-    {
-    };
-    class b_recon: b_unknown
-    {
-    };
-    class o_recon: o_unknown
-    {
-    };
-    class n_recon: n_unknown
-    {
-    };
-    class b_air: b_unknown
-    {
-    };
-    class o_air: o_unknown
-    {
-    };
-    class n_air: n_unknown
-    {
-    };
-    class b_plane: b_unknown
-    {
-    };
-    class o_plane: o_unknown
-    {
-    };
-    class n_plane: n_unknown
-    {
-    };
-    class b_uav: b_unknown
-    {
-    };
-    class o_uav: o_unknown
-    {
-    };
-    class n_uav: n_unknown
-    {
-    };
-    class b_naval: b_unknown
-    {
-    };
-    class o_naval: o_unknown
-    {
-    };
-    class n_naval: n_unknown
-    {
-    };
-    class b_med: b_unknown
-    {
-    };
-    class o_med: o_unknown
-    {
-    };
-    class n_med: n_unknown
-    {
-    };
-    class b_art: b_unknown
-    {
-    };
-    class o_art: o_unknown
-    {
-    };
-    class n_art: n_unknown
-    {
-    };
-    class b_mortar: b_unknown
-    {
-    };
-    class o_mortar: o_unknown
-    {
-    };
-    class n_mortar: n_unknown
-    {
-    };
-    class b_hq: b_unknown
-    {
-    };
-    class o_hq: o_unknown
-    {
-    };
-    class n_hq: n_unknown
-    {
-    };
-    class b_support: b_unknown
-    {
-    };
-    class o_support: o_unknown
-    {
-    };
-    class n_support: n_unknown
-    {
-    };
-    class b_maint: b_unknown
-    {
-    };
-    class o_maint: o_unknown
-    {
-    };
-    class n_maint: n_unknown
-    {
-    };
-    class b_service: b_unknown
-    {
-    };
-    class o_service: o_unknown
-    {
-    };
-    class n_service: n_unknown
-    {
-    };
-    class b_installation: b_unknown
-    {
-    };
-    class o_installation: o_unknown
-    {
-    };
-    class n_installation: n_unknown
-    {
-    };
-    class u_installation: n_unknown
-    {
-    };
-    class b_antiair: b_unknown
-    {
-    };
-    class o_antiair: o_unknown
-    {
-    };
-    class n_antiair: n_unknown
-    {
-    };
-    class c_unknown: b_unknown
-    {
-    };
-    class c_car: c_unknown
-    {
-    };
-    class c_ship: c_unknown
-    {
-    };
-    class c_air: c_unknown
-    {
-    };
-    class c_plane: c_unknown
-    {
-    };
+    class Flag: Hill;
+    class b_unknown: Flag;
     class group_0: b_unknown
     {
         color[] = {0.85,0.85,0.85,1};
-    };
-    class group_1: group_0
-    {
-    };
-    class group_2: group_0
-    {
-    };
-    class group_3: group_0
-    {
-    };
-    class group_4: group_0
-    {
-    };
-    class group_5: group_0
-    {
-    };
-    class group_6: group_0
-    {
-    };
-    class group_7: group_0
-    {
-    };
-    class group_8: group_0
-    {
-    };
-    class group_9: group_0
-    {
-    };
-    class group_10: group_0
-    {
-    };
-    class group_11: group_0
-    {
     };
     class respawn_unknown: Flag
     {
