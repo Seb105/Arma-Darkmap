@@ -313,10 +313,7 @@ class RscMapControl
     {
         color[] = {0.447,0.595,0.353,0.4};
     };
-    class Church
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class Church;
     class Chapel
     {
         color[] = {0.85,0.85,0.85,1};
@@ -345,30 +342,12 @@ class RscMapControl
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Lighthouse
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class Quay
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class Fuelstation
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class Hospital
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class BusStop
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class Transmitter
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class Lighthouse;
+    class Quay;
+    class Fuelstation;
+    class Hospital;
+    class BusStop;
+    class Transmitter;
     class Stack
     {
         color[] = {0.85,0.85,0.85,1};
@@ -381,10 +360,7 @@ class RscMapControl
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class Watertower
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class Watertower;
     class Waypoint
     {
         color[] = {0.075,0.075,0.075,1};
@@ -395,22 +371,10 @@ class RscMapControl
     };
     colorTrails[] = {0.354,0.285,0.191,0.15};
     colorTrailsFill[] = {0.354,0.285,0.191,0.65};
-    class power
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class powersolar
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class powerwave
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class powerwind
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class power;
+    class powersolar;
+    class powerwave;
+    class powerwind;
     class Shipwreck
     {
         color[] = {0.85,0.85,0.85,1};
@@ -892,10 +856,6 @@ class CfgMarkers
     {
         color[] = {0.447,0.595,0.353,0.4};
     };
-    class loc_Church: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
     class loc_Chapel: loc_Tree
     {
         color[] = {0.85,0.85,0.85,1};
@@ -920,30 +880,6 @@ class CfgMarkers
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class loc_Lighthouse: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_Quay: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_Fuelstation: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_Hospital: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_BusStop: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_Transmitter: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
     class loc_Stack: loc_Tree
     {
         color[] = {0.85,0.85,0.85,1};
@@ -956,30 +892,7 @@ class CfgMarkers
     {
         color[] = {0.85,0.85,0.85,1};
     };
-    class loc_WaterTower: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_Power: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_PowerSolar: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_PowerWave: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_PowerWind: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class flag_NATO: Flag
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
+    class flag_NATO: Flag {};
     class Select: Flag
     {
         color[] = {0.833,0.093,0.093,1};
@@ -1026,22 +939,6 @@ class CfgMarkers
         color[] = {0.075,0.075,0.075,1};
     };
     class White: flag_NATO
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_CivilDefense: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_CulturalProperty: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_DangerousForces: loc_Tree
-    {
-        color[] = {0.075,0.075,0.075,1};
-    };
-    class loc_SafetyZone: loc_Tree
     {
         color[] = {0.075,0.075,0.075,1};
     };

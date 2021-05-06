@@ -196,7 +196,7 @@ class ctrlMap: ctrlDefault
     {
         coefMax = 1;
         coefMin = 0.85;
-        // color[] = {1,1,1,1}; // REMOVE TO STOP BLACK CIV MARKERS ON MAP
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
     };
     class Hospital: FuelStation
@@ -725,7 +725,7 @@ class RscMapControl
     };
     class Church
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
         size = 24;
         importance = 1;
@@ -797,7 +797,7 @@ class RscMapControl
     };
     class Lighthouse
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
         size = 24;
         importance = 1;
@@ -806,7 +806,7 @@ class RscMapControl
     };
     class Quay
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1};  // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
         size = 24;
         importance = 1;
@@ -815,7 +815,7 @@ class RscMapControl
     };
     class Fuelstation
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
         size = 24;
         importance = 1;
@@ -824,7 +824,7 @@ class RscMapControl
     };
     class Hospital
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
         size = 24;
         importance = 1;
@@ -833,7 +833,7 @@ class RscMapControl
     };
     class BusStop
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
         size = 24;
         importance = 1;
@@ -850,7 +850,7 @@ class RscMapControl
     };
     class Transmitter
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
         size = 24;
         importance = 1;
@@ -886,7 +886,7 @@ class RscMapControl
     };
     class Watertower
     {
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
         size = 24;
         importance = 1;
@@ -960,7 +960,7 @@ class RscMapControl
         importance = 1;
         coefMin = 0.85;
         coefMax = 1;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class powersolar
     {
@@ -969,7 +969,7 @@ class RscMapControl
         importance = 1;
         coefMin = 0.85;
         coefMax = 1;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class powerwave
     {
@@ -978,7 +978,7 @@ class RscMapControl
         importance = 1;
         coefMin = 0.85;
         coefMax = 1;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class powerwind
     {
@@ -987,7 +987,7 @@ class RscMapControl
         importance = 1;
         coefMin = 0.85;
         coefMax = 1;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class Shipwreck
     {
@@ -2843,7 +2843,7 @@ class CfgMarkers
         name = "Church";
         icon = "\A3\ui_f\data\map\mapcontrol\Church_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Chapel: loc_Tree
@@ -2899,7 +2899,7 @@ class CfgMarkers
         name = "Lighthouse";
         icon = "\A3\ui_f\data\map\mapcontrol\Lighthouse_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Quay: loc_Tree
@@ -2907,7 +2907,7 @@ class CfgMarkers
         name = "Pier";
         icon = "\A3\ui_f\data\map\mapcontrol\Quay_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Fuelstation: loc_Tree
@@ -2915,7 +2915,7 @@ class CfgMarkers
         name = "Fuel Station";
         icon = "\A3\ui_f\data\map\mapcontrol\Fuelstation_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Hospital: loc_Tree
@@ -2923,7 +2923,7 @@ class CfgMarkers
         name = "Hospital";
         icon = "\A3\ui_f\data\map\mapcontrol\Hospital_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_BusStop: loc_Tree
@@ -2931,7 +2931,7 @@ class CfgMarkers
         name = "Bus Stop";
         icon = "\A3\ui_f\data\map\mapcontrol\BusStop_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Transmitter: loc_Tree
@@ -2939,7 +2939,7 @@ class CfgMarkers
         name = "Radio Tower";
         icon = "\A3\ui_f\data\map\mapcontrol\Transmitter_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Stack: loc_Tree
@@ -2971,7 +2971,7 @@ class CfgMarkers
         name = "Water Tower";
         icon = "\A3\ui_f\data\map\mapcontrol\WaterTower_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Power: loc_Tree
@@ -2979,7 +2979,7 @@ class CfgMarkers
         name = "Power Plant";
         icon = "\A3\ui_f\data\map\mapcontrol\Power_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_PowerSolar: loc_Tree
@@ -2987,7 +2987,7 @@ class CfgMarkers
         name = "Solar Power Plant";
         icon = "\A3\ui_f\data\map\mapcontrol\PowerSolar_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_PowerWave: loc_Tree
@@ -2995,7 +2995,7 @@ class CfgMarkers
         name = "Wave Power Plant";
         icon = "\A3\ui_f\data\map\mapcontrol\PowerWave_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_PowerWind: loc_Tree
@@ -3003,7 +3003,7 @@ class CfgMarkers
         name = "Wind Power Plant";
         icon = "\A3\ui_f\data\map\mapcontrol\PowerWind_CA.paa";
         size = 24;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         showEditorMarkerColor = 0;
     };
     class loc_Fortress: loc_Bunker
@@ -3018,7 +3018,7 @@ class CfgMarkers
         size = 32;
         scope = 1;
         shadow = 0;
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
         markerClass = "Flags";
     };
     class flag_CSAT: flag_NATO
@@ -3376,28 +3376,28 @@ class CfgMarkers
         size = 24;
         name = "Civil Defense";
         icon = "\A3\ui_f_orange\data\cfgmarkers\civildefense.paa";
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class loc_CulturalProperty: loc_Tree
     {
         size = 24;
         name = "Cultural Property";
         icon = "\A3\ui_f_orange\data\cfgmarkers\culturalproperty_ca.paa";
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class loc_DangerousForces: loc_Tree
     {
         size = 24;
         name = "Dangerous Forces";
         icon = "\A3\ui_f_orange\data\cfgmarkers\dangerousforces_ca.paa";
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class loc_SafetyZone: loc_Tree
     {
         size = 24;
         name = "Safety Zone";
         icon = "\A3\ui_f_orange\data\cfgmarkers\safetyzone_ca.paa";
-        color[] = {1,1,1,1};
+        color[] = {1,1,1,1}; // TAG::REMOVE TO STOP BLACK CIV MARKERS ON MAP
     };
     class b_Ordnance: b_unknown
     {

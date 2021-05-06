@@ -44,6 +44,8 @@ def main():
     for index, line in enumerate(lines):
         # Make sure we're dealing with a colour set
         startTxt = line.replace(" ","")[:5]
+        if "TAG::REMOVE" in line:
+            continue
         if "class" in startTxt or "{" in startTxt[0] or "}" in startTxt[0]:
             newlines.append(line)
             continue
