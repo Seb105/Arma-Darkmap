@@ -12,7 +12,7 @@ Arma Map Darkmode inverts the luminance for almost all elements of the map. Beca
 - Unfortunately, the engine does not support changing colours after game launch so it can not change mid-mission such as being dark at night.
 
 ## Known issues:
-- Orange road fills are now black. They should be dark orange, I'm not sure why they are not.
+- Orange road fills are now black on some maps. They should be dark orange, I'm not sure why they are not.
 
 ## License and Support
 Licensed under GPL v3  
