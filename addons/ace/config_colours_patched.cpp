@@ -24,7 +24,7 @@ class ctrlMap: ctrlDefault
     colorInactive[] = {0.075,0.075,0.075,0.5};
     colorTracks[] = {0.354,0.285,0.191,0.15};
     colorTracksFill[] = {0.354,0.285,0.191,1};
-    colorRoads[] = {0.308,0.308,0.308,1};
+    colorRoads[] = {0.616,0.308,0.154,1};
     colorRoadsFill[] = {0.075,0.075,0.075,1};
     colorMainRoads[] = {0.616,0.308,0.154,1};
     colorMainRoadsFill[] = {0.554,0.226,0.061,1};
@@ -270,7 +270,7 @@ class RscMapControl
     colorInactive[] = {0.075,0.075,0.075,0.5};
     colorLevels[] = {0.823,0.686,0.583,0.5};
     colorTracks[] = {0.354,0.285,0.191,0.15};
-    colorRoads[] = {0.308,0.308,0.308,1};
+    colorRoads[] = {0.616,0.308,0.154,1};
     colorMainRoads[] = {0.616,0.308,0.154,1};
     colorTracksFill[] = {0.354,0.285,0.191,1};
     colorRoadsFill[] = {0.075,0.075,0.075,1};
